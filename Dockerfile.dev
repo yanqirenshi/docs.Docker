@@ -29,7 +29,7 @@ ENTRYPOINT [ "/bin/bash"]
 # Usage
 # =====
 #
-#  docker run -p 3000:3000 -v /Users/satoshi.iwasaki/prj/fg/docs.Docker:/home/cl-user/prj/docs.Docker -it renshi/react.dev
+#  docker run -p 3000:3000 -v c:/Users/yanqirenshi/prj/docs/docs.Docker:/home/cl-user/prj/docs.Docker -it renshi/react.dev
 #  cd prj
 #  npx create-react-app my-app
 #  cd my-app
