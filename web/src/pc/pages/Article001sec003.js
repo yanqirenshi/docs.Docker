@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ArticleSecTitle from './ArticleSecTitle';
+
 function Article001sec003 (props) {
     let style = {
         root: {
@@ -9,7 +11,13 @@ function Article001sec003 (props) {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            flexDirection: 'column',
+            paddingTop: '33px',
         },
+        contents_root: {
+            flexGrow: 1,
+            display: 'flex',
+        }
     };
 
     let click = () => {
@@ -20,11 +28,9 @@ function Article001sec003 (props) {
     return (
         <div className="section">
           <div style={style.root}>
-            <div>
-            <p>Section 1 (welcome to fullpage.js)</p>
-            <button onClick={click}>
-              Click me to move down
-            </button>
+            <ArticleSecTitle titile="Image"/>
+
+            <div style={style.contents_root}>
             </div>
           </div>
         </div>

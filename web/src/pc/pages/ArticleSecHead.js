@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ArticleSecHead () {
+function ArticleSecHead (props) {
     let style = {
         root: {
             width: '100vw',
@@ -12,16 +12,20 @@ function ArticleSecHead () {
         },
         item: {
             padding: '8px 22px',
-            background: 'rgba(255,255,255,0.8)',
+            background: 'rgba(255,255,255,0.3)',
             display: 'inline-block',
             margin: '0px',
             borderRadius: '0px 0px 5px 5px',
         },
     };
 
+    let click = () => {
+        props.source.callback('move-prev');
+    };
+
     return (
         <div style={style.root}>
-          <p style={style.item}>Prev</p>
+          <p style={style.item} onClick={click}>Prev</p>
         </div>
     );
 }

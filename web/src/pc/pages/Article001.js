@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -12,6 +12,8 @@ import ArticleSecHead from './ArticleSecHead';
 import ArticleSecFoot from './ArticleSecFoot';
 
 function Article001 () {
+    const [fullpage, setFullpage] = useState(null);
+
     let i = 1;
     let sections = [
         { id: i++, title: 'Overview',   comp: 'Article001sec001' },
@@ -21,6 +23,20 @@ function Article001 () {
     ];
     let source={
         sections: sections,
+        callback: (action, data) => {
+            if ('move-next'===action) {
+                fullpage.moveSectionDown();
+                return;
+            }
+            if ('move-prev'===action) {
+                fullpage.moveSectionUp();
+                return;
+            }
+            if ('click-item'===action) {
+                fullpage.moveTo(data.id);
+                return;
+            }
+        },
     };
 
     let background = () => {
@@ -34,7 +50,7 @@ function Article001 () {
         <>
           <Article001Controller source={source}/>
 
-          <ArticleSecHead />
+          <ArticleSecHead source={source} />
 
           <ReactFullpage licenseKey = {'YOUR_KEY_HERE'}
                          scrollingSpeed = {1000}
@@ -45,7 +61,7 @@ function Article001 () {
                                  sections: sections,
                                  color: background(),
                              };
-
+                             setFullpage(fullpageApi);
                              return (
                                  <ReactFullpage.Wrapper>
                                    <Article001sec001 source={sec_source}/>
@@ -56,7 +72,7 @@ function Article001 () {
                              );
                          }} />
 
-          <ArticleSecFoot />
+          <ArticleSecFoot source={source} />
         </>
     );
 }
