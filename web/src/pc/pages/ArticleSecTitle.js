@@ -3,9 +3,9 @@ import React from 'react';
 function ArticleSecTitle (props) {
     let style = {
         root: {
-            fontSize: '66px',
         },
         title: {
+            fontSize: '111px',
             margin: '0px',
         },
     };

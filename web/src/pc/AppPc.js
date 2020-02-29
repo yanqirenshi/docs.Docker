@@ -6,7 +6,7 @@ import PageHome from './pages/PageHome';
 function AppPc () {
     return (
         <BrowserRouter>
-          <Route exact path='/' component={PageHome} />
+          <Route exact path='/docs.Docker' component={PageHome} />
         </BrowserRouter>
     );
 }

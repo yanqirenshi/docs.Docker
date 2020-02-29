@@ -4,6 +4,9 @@ import ArticleSecTitle from './ArticleSecTitle';
 
 function Article001sec004 (props) {
     let style = {
+        section: {
+            padding: '0px'
+        },
         root: {
             width: '100%',
             height: '100%',
@@ -26,7 +29,7 @@ function Article001sec004 (props) {
     };
 
     return (
-        <div className="section">
+        <div className="section" style={style.section}>
           <div style={style.root}>
             <ArticleSecTitle titile="Container"/>
 
