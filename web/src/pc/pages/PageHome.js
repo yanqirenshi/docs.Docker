@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Article001 from'./Article001';
+
 function PageHome () {
     let style = {
         root: {
@@ -10,6 +12,7 @@ function PageHome () {
 
     return (
         <div style={style.root}>
+            <Article001 />
         </div>
     );
 }
