@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import Article001sec001     from './Article001sec001';
+import Article001sec001     from './Article001sec001/Article001sec001';
 import Article001sec002     from './Article001sec002';
-import Article001sec003     from './Article001sec003';
-import Article001sec004     from './Article001sec004';
+import Article001sec003     from './Article001sec003/Article001sec003';
+import Article001sec004     from './Article001sec004/Article001sec004';
 import Article001Controller from './Article001Controller';
 
 import ArticleSecHead from './ArticleSecHead';

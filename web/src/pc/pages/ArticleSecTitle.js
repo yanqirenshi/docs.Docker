@@ -3,17 +3,18 @@ import React from 'react';
 function ArticleSecTitle (props) {
     let style = {
         root: {
+            marginBottom: '88px',
         },
         title: {
             fontSize: '111px',
+            color: '#f3f3f3',
             margin: '0px',
         },
     };
-    console.log(props.titile);
+
     return (
         <div style={style.root}>
-          <h1 className="title"
-              style={style.title}>{props.titile}</h1>
+          <h1 style={style.title}>{props.titile}</h1>
         </div>
     );
 }
