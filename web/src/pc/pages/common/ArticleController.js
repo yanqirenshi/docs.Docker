@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Article001ControllerItem from './Article001ControllerItem';
+import ArticleControllerItem from './ArticleControllerItem';
 
-function Article001Controller (props) {
+function ArticleController (props) {
     let style = {
         root: {
             position: 'fixed',
@@ -24,12 +24,12 @@ function Article001Controller (props) {
         <div style={style.root}>
           {
               props.source.sections.map((d) => {
-                  return <Article001ControllerItem source={d}
-                                                   callback={props.source.callback}/>;
+                  return <ArticleControllerItem source={d}
+                                                callback={props.source.callback}/>;
               })
           }
         </div>
     );
 }
 
-export default Article001Controller;
+export default ArticleController;

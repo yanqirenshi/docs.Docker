@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ArticleSecTitle from '../common/ArticleSecTitle';
+import ArticleSecTitle from '../../common/ArticleSecTitle';
 
-function Article001sec002 (props) {
+function Article001sec004 (props) {
     let style = {
         section: {
             padding: '0px'
@@ -30,7 +30,7 @@ function Article001sec002 (props) {
     return (
         <div className="section" style={style.section}>
           <div style={style.root}>
-            <ArticleSecTitle titile="Dockerfile"/>
+            <ArticleSecTitle titile="down"/>
 
             <div style={style.contents_root}>
             </div>
@@ -39,4 +39,4 @@ function Article001sec002 (props) {
     );
 }
 
-export default Article001sec002;
+export default Article001sec004;

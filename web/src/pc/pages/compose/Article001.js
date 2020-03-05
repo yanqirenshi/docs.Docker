@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import Article001sec001  from './Article001sec001/Article001sec001';
-import Article001sec002  from './Article001sec002';
-import Article001sec003  from './Article001sec003/Article001sec003';
-import Article001sec004  from './Article001sec004/Article001sec004';
+import Article001sec001 from './Article001sec001/Article001sec001';
+import Article001sec002 from './Article001sec001/Article001sec002';
+import Article001sec003 from './Article001sec001/Article001sec003';
+import Article001sec004 from './Article001sec001/Article001sec004';
 
 import ArticleController from '../common/ArticleController';
 import ArticleSecHead    from '../common/ArticleSecHead';
@@ -17,9 +17,6 @@ function Article001 () {
     let i = 1;
     let sections = [
         { id: i++, title: 'Overview',   comp: 'Article001sec001' },
-        { id: i++, title: 'Dockerfile', comp: 'Article001sec002' },
-        { id: i++, title: 'Image',      comp: 'Article001sec003' },
-        { id: i++, title: 'Container',  comp: 'Article001sec004' },
     ];
     let source={
         sections: sections,

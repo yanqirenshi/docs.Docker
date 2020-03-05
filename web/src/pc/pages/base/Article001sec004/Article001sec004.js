@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ArticleSecTitle          from '../ArticleSecTitle';
-import Article001secGraph       from '../Article001secGraph';
+import ArticleSecTitle          from '../../common/ArticleSecTitle';
+import ArticleSecGraph          from '../../common/ArticleSecGraph';
 import Article001sec004CRUD     from './Article001sec004CRUD';
 import Article001sec004other    from './Article001sec004other';
 
@@ -54,7 +54,7 @@ function Article001sec004 (props) {
 
             <ArticleSecTitle titile="Container"/>
 
-            <Article001secGraph source={graph}/>
+            <ArticleSecGraph source={graph}/>
 
             <div style={style.table_area}>
               <div style={style.left_table}>

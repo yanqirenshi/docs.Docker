@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Article001secGraph (props) {
+function ArticleSecGraph (props) {
     let style = {
         root: {
             marginBottom: '33px',
@@ -23,4 +23,4 @@ function Article001secGraph (props) {
     );
 }
 
-export default Article001secGraph;
+export default ArticleSecGraph;

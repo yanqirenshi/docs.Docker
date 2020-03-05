@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Article001ControllerItem (props) {
+function ArticleControllerItem (props) {
     let style = {
         root: {
             background: 'rgba(255,255,255,0.3)',
@@ -31,4 +31,4 @@ function Article001ControllerItem (props) {
     );
 }
 
-export default Article001ControllerItem;
+export default ArticleControllerItem;
