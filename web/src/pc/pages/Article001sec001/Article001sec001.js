@@ -18,10 +18,8 @@ function Article001sec001 (props) {
             justifyContent: 'center',
             alignItems: 'center',
             flexDirection: 'column',
-            paddingTop: '33px',
         },
         tables_area: {
-            marginTop: '88px',
             display: 'flex',
         },
         table_left: {

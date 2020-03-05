@@ -3,8 +3,8 @@ import React from 'react';
 function Article001sec003CRUD (props) {
     let style = {
         header: {
-            char: { fontSize: '88px', lineHeight: '88px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
-            str:  { fontSize: '66px', lineHeight: '66px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
+            char: { fontSize: '66px', lineHeight: '66px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
+            str:  { fontSize: '55px', lineHeight: '55px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
         },
         operator: {
             char: { fontSize: '33px', lineHeight: '33px', color: '#f3f3f3', padding: '11px 22px', verticalAlign: 'middle' },

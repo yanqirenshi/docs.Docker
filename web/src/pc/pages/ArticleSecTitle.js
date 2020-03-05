@@ -3,12 +3,13 @@ import React from 'react';
 function ArticleSecTitle (props) {
     let style = {
         root: {
-            marginBottom: '88px',
+            marginBottom: '33px',
         },
         title: {
-            fontSize: '111px',
+            fontSize: '88px',
             color: '#f3f3f3',
             margin: '0px',
+            lineHeight: '88px',
         },
     };
 

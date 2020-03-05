@@ -2,34 +2,51 @@ import React from 'react';
 
 function Article001sec001TableObjects (props) {
     let style = {
-        root: {
-            fontSize: '22px',
-        }
+        header: {
+            char: { fontSize: '44px', lineHeight: '44px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
+            str:  { fontSize: '33px', lineHeight: '33px', color: '#f3f3f3', padding: '11px 22px', textAlign: 'center' },
+        },
+        operator: {
+            char: { fontSize: '22px', lineHeight: '22px', color: '#f3f3f3', padding: '11px 22px', verticalAlign: 'middle' },
+            str:  { fontSize: '22px', lineHeight: '22px', color: '#f3f3f3', padding: '11px 22px', verticalAlign: 'middle' },
+        },
     };
 
+    let click = () => {
+        console.log(props.source.fullpageApi);
+        props.source.fullpageApi.moveSectionDown();
+    };
+
+    let data = [
+        { style: 'char', type: 'Dockerfile', operators: [{ command: 'Image を作成するためのファイル' }]},
+        { style: 'char', type: 'Image',      operators: [{ command: 'Container のためのファイルの集合体' }]},
+        { style: 'char', type: 'Container',  operators: [{ command: '' }]},
+        { style: 'char', type: 'Docker Hub',  operators: [{ command: '' }]},
+    ];
+
+
     return (
-        <table className="table is-bordered is-striped is-narrow is-hoverable"
-               style={style.root}>
-
-          <thead>
-            <tr>
-              <th>Element</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-
+        <table>
           <tbody>
-            <tr>
-              <td>Dockerfile</td> <td>Image を作成するためのファイル</td>
-            </tr>
-            <tr>
-              <td>Image</td> <td>Container のためのファイルの集合体</td>
-            </tr>
-            <tr>
-              <td>Container</td> <td></td>
-            </tr>
-          </tbody>
 
+            {
+                data.map((d) => {
+                    return <tr>
+                           <td style={style.header[d.style]}>
+                             <p>{d.type}</p>
+                           </td>
+                           <td style={style.operator[d.style]}>
+                             {
+                                 d.operators.map((o) => {
+                                     return <p>{o.command}</p>;
+                                 })
+                             }
+                           </td>
+                         </tr>;
+                })
+            }
+
+          </tbody>
         </table>
     );
 }

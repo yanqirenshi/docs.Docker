@@ -6,12 +6,10 @@ function Article001secGraph (props) {
             marginBottom: '33px',
 
         },
-        graph: {
-            fontSize: '22px',
-        },
         pre: {
-            padding: '66px',
+            padding: '33px',
             borderRadius: '11px',
+            fontSize: '22px',
             lineHeight: '22px',
         },
     };
