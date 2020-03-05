@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/docs.Docker/static/css/main.43d3452f.chunk.css",
-    "main.js": "/docs.Docker/static/js/main.a4eb4759.chunk.js",
-    "main.js.map": "/docs.Docker/static/js/main.a4eb4759.chunk.js.map",
+    "main.js": "/docs.Docker/static/js/main.98aaea3c.chunk.js",
+    "main.js.map": "/docs.Docker/static/js/main.98aaea3c.chunk.js.map",
     "runtime-main.js": "/docs.Docker/static/js/runtime-main.08e7bcc6.js",
     "runtime-main.js.map": "/docs.Docker/static/js/runtime-main.08e7bcc6.js.map",
-    "static/js/2.88a17d39.chunk.js": "/docs.Docker/static/js/2.88a17d39.chunk.js",
-    "static/js/2.88a17d39.chunk.js.map": "/docs.Docker/static/js/2.88a17d39.chunk.js.map",
+    "static/js/2.29dff9ba.chunk.js": "/docs.Docker/static/js/2.29dff9ba.chunk.js",
+    "static/js/2.29dff9ba.chunk.js.map": "/docs.Docker/static/js/2.29dff9ba.chunk.js.map",
     "index.html": "/docs.Docker/index.html",
-    "precache-manifest.d3ee1453f358578dbddc21047e324c04.js": "/docs.Docker/precache-manifest.d3ee1453f358578dbddc21047e324c04.js",
+    "precache-manifest.7a37b84a5f80d276675f9819c831e860.js": "/docs.Docker/precache-manifest.7a37b84a5f80d276675f9819c831e860.js",
     "service-worker.js": "/docs.Docker/service-worker.js",
     "static/css/main.43d3452f.chunk.css.map": "/docs.Docker/static/css/main.43d3452f.chunk.css.map",
-    "static/js/2.88a17d39.chunk.js.LICENSE.txt": "/docs.Docker/static/js/2.88a17d39.chunk.js.LICENSE.txt",
+    "static/js/2.29dff9ba.chunk.js.LICENSE.txt": "/docs.Docker/static/js/2.29dff9ba.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/docs.Docker/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.08e7bcc6.js",
-    "static/js/2.88a17d39.chunk.js",
+    "static/js/2.29dff9ba.chunk.js",
     "static/css/main.43d3452f.chunk.css",
-    "static/js/main.a4eb4759.chunk.js"
+    "static/js/main.98aaea3c.chunk.js"
   ]
 }
