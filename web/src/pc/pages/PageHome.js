@@ -44,6 +44,10 @@ function PageHome () {
           </div>
 
           <div style={style.forground}>
+            <Link to="/docs.Docker/kubernetes">
+              <p style={style.forground_item}>Kubernetes</p>
+            </Link>
+
             <Link to="/docs.Docker/base">
               <p style={style.forground_item}>Base</p>
             </Link>
@@ -51,10 +55,6 @@ function PageHome () {
             <Link to="/docs.Docker/compose">
               <p style={style.forground_item}>Compose</p>
             </Link>
-
-            {/* <Link to="/docs.Docker/kubernetes"> */}
-            {/*   <p style={style.forground_item}>Kubernetes</p> */}
-            {/* </Link> */}
           </div>
         </div>
     );
